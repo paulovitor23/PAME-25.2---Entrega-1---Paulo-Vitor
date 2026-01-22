@@ -5,11 +5,19 @@ body{
     background-color: #000;
     color: #fff;
     height: 100vh;
+
+
+    background-image: url("Fluxo_logo.webp");
+    background-size: cover;        
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-position: center -150px;
+    height: 85vh;
 }
 
 
 #header{
-    padding: 20px 40px;
+    padding: 30px 40px;
 }
 
 .logo{
@@ -21,8 +29,18 @@ body{
     justify-content: center;
     align-items: center;
     height: calc(100vh - 120px);
+    background-color: rgba(0, 0, 0, 0.5);
 }
+.login {
+    background-color: black; 
+    padding: 32px;
+    border-radius: 8px;
+    width: 360px;
 
+    /* Centralização interna */
+    display: flex;
+    flex-direction: column;
+}
 .login h2{ 
     text-align: center;
     margin-bottom: 20px;
@@ -37,4 +55,36 @@ body{
     border: none;
     border-radius: 4px; 
     color: #fff;
+}
+.botao_login{
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7a00;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.login_opcoes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.login_opcoes a {
+    color: #ff7a00;
+    text-decoration: none;
+}
+
+.signup {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.signup a {
+    color: #ff7a00;
+    text-decoration: none;
 }
