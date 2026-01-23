@@ -5,46 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <!-- Cabeçalho da página -->
     <header id="header">
         <!-- Logo textual da plataforma -->
-        <span class="logo">FLUXO TV</span>
+        <span class="logo">
+            FLUXO <span class="logo-tv">TV</span>
+        </span>
     </header>
 
     <!-- Conteúdo principal da página -->
     <main class="principal">
 
         <!-- Seção de login -->
-        
-        <section class="login">
+        <div class="login">
             <h2>Entrar</h2>
 
-            <!-- Campo para email ou telefone -->
-            <input type="text" placeholder="Email ou número de telefone">
-
-            <!-- Campo para senha -->
+            <input type="text" placeholder="Email ou número de celular">
             <input type="password" placeholder="Senha">
 
-            <!-- Botão de submissão do login -->
-            <button class="botao_login">Entrar</button>
-            
-            <div class="login_opcoes">
-                <input type="checkbox" >Lembre-se de mim</input>
-                <a href="#">Esqueceu a senha?</a>
+            <div class="acoes-login">
+                <label class="lembrar">
+                    <input type="checkbox">
+                    Lembre-se de mim
+                </label>
+                <button class="botao_login">Entrar</button>
             </div>
 
-            <p class="signup">
-                Novo por aqui? <a href="#">Assine agora</a>
-            </p>
-            
-
+            <div class="signup">
+                <span class="signup-text">Novo por aqui?</span>
+                <a href="#">Assine agora</a>
             </div>
-        
-        </section>
+        </div>
+
 
     </main>
+    
+    <footer class="footer">
+        <p class="duvidas">
+            Dúvidas? Ligue <a href="tel:08001234567">0800 123 4567</a>
+        </p>
+
+        <ul class="footer-links">
+            <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#">Central de ajuda</a></li>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Privacidade</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>

@@ -12,7 +12,6 @@ body{
     background-position: center;  
     background-repeat: no-repeat;  
     background-position: center -150px;
-    height: 85vh;
 }
 
 
@@ -21,26 +20,36 @@ body{
 }
 
 .logo{
-    color: #ff7a00
+    font-family: 'Montserrat', sans-serif;
+    color: #ff7a00;
+    font-size: 36px;
+    font-weight: 700;
 }
-
+.logo-tv {
+    color: #fff;     
+}
 .principal{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: calc(100vh - 120px);
-    background-color: rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+    
+    
+    background-color: rgba(0, 0, 0, 0.75);
+    padding-bottom: 200px;
+    padding-top: 220px;
 }
+
+/*PARTE DO LOGIN */
 .login {
     background-color: black; 
     padding: 32px;
     border-radius: 8px;
     width: 360px;
 
-    /* Centralização interna */
     display: flex;
     flex-direction: column;
 }
+
 .login h2{ 
     text-align: center;
     margin-bottom: 20px;
@@ -75,7 +84,7 @@ body{
 }
 
 .login_opcoes a {
-    color: #ff7a00;
+    color: #eeece9;
     text-decoration: none;
 }
 
@@ -85,6 +94,49 @@ body{
 }
 
 .signup a {
-    color: #ff7a00;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.lembrar input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+/* Parte de baixo */
+.footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #b3b3b3;
+    padding: 40px 60px;
+    font-size: 14px;
+}
+
+.duvidas {
+    margin-bottom: 20px;
+}
+
+.duvidas a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
