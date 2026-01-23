@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,16 +20,16 @@
 
     <!-- Conteúdo principal da página -->
     <main class="principal">
-
-        <!-- Seção de login -->
+    
         <div class="login">
             <h2>Entrar</h2>
 
             <input type="text" placeholder="Email ou número de celular">
             <input type="password" placeholder="Senha">
 
+            <button class="botao_login">Entrar</button>
+
             <div class="acoes-login">
-                <button class="botao_login">Entrar</button>
                 <label class="lembrar">
                     <input type="checkbox">
                     Lembre-se de mim
@@ -42,22 +42,22 @@
                 <a href="#">Assine agora</a>
             </div>
 
-            <div class="descricao-container">
-            <div class="descricao-titulo">
-                <span>Descrição</span>
-                <span class="seta">▲</span>
-            </div>
-            <p class="descricao-texto">
-                A Fluxo TV é uma plataforma de streaming focada em conteúdos originais, transmissões ao vivo e experiências digitais interativas, conectando criadores e espectadores em um ecossistema moderno de entretenimento.
-            </p>
-        </div>
-
+            <details class="descricao-container">
+                <summary class="descricao-titulo">
+                    <span>Descrição</span>
+                    <span class="seta">▲</span>
+                </summary>
+                <p class="descricao-texto">
+                    A Fluxo TV é uma plataforma de streaming focada em conteúdos originais, transmissões ao vivo e experiências digitais interativas, conectando criadores e espectadores em um ecossistema moderno de entretenimento.
+                </p>
+            </details>
+        </div> 
 
     </main>
     
     <footer class="footer">
         <p class="duvidas">
-            Dúvidas? Ligue <a href="tel:08001234567">0800 123 4567</a>
+            Dúvidas? Ligue <a>0800 000 0000</a>
         </p>
 
         <ul class="footer-links">

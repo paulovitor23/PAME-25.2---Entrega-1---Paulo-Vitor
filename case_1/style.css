@@ -4,57 +4,53 @@
     padding: 0;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
     height: 100vh;
-
-
     background-image: url("Fluxo_logo.webp");
     background-size: cover;        
-    background-position: center;  
+    background-position: center -50px;
     background-repeat: no-repeat;  
-    background-position: center -150px;
+    min-height: 100vh;
 }
 
-
-#header{
+#header {
     padding: 30px 40px;
 }
 
-.logo{
+.logo {
     font-family: 'Montserrat', sans-serif;
     color: #ff7a00;
     font-size: 36px;
     font-weight: 700;
 }
+
 .logo-tv {
     color: #fff;     
 }
-.principal{
+
+.principal {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
-    
     background-color: rgba(0, 0, 0, 0.75);
-    padding-bottom: 200px;
+    padding-bottom: 85px;
     padding-top: 220px;
 }
 
-/*PARTE DO LOGIN */
+/* PARTE DO LOGIN */
 .login {
     background-color: black; 
     padding: 32px;
     border-radius: 8px;
-    width: 360px;
-
+    width: 360px; 
     display: flex;
     flex-direction: column;
 }
 
-.login h2{ 
+.login h2 { 
     text-align: center;
     margin-bottom: 20px;
 }
@@ -69,47 +65,50 @@ body{
     border-radius: 4px; 
     color: #fff;
 }
-.botao_login{
+
+.botao_login {
     width: 100%;
     padding: 10px; 
     background-color: #ff7a00;
-
     border: none;
     border-radius: 4px;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    
-    margin-bottom: 20px;
+    margin-bottom: 15px; 
 }
 
 .acoes-login {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    margin-bottom: 15px;
-    justify-content: space-between;
+    flex-direction: column; /* Um embaixo do outro */
+    align-items: flex-start; 
+    margin-bottom: 25px;
 }
-.esqueci-senha {
-    color: #ff7a00; 
-    text-decoration: none;
-    font-size: 13px;
-}
-.esqueci-senha:hover {
-    text-decoration: underline;
-}
+
 .lembrar {
     display: flex;
     align-items: center;
     font-size: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 8px; /* Espaçamento entre o check e o link */
     cursor: pointer;
 }
 
-.login_opcoes a {
-    color: #eeece9;
+.lembrar input[type="checkbox"] {
+    transform: scale(1.2); 
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.esqueci-senha {
+    color: #ff7a00; 
     text-decoration: none;
+    font-size: 13px;
+    margin-left: 85px; 
+}
+
+.esqueci-senha:hover {
+    text-decoration: underline;
 }
 
 .signup {
@@ -123,12 +122,7 @@ body{
     font-weight: bold;
 }
 
-.lembrar input[type="checkbox"] {
-    transform: scale(1.5);
-    margin-right: 6px;
-    cursor: pointer;
-}
-
+/* DESCRICAO */
 .descricao-container {
     margin-top: 30px;
     border-top: 1px solid #333; 
@@ -144,9 +138,14 @@ body{
     margin-bottom: 10px;
 }
 
+details[open] .seta {
+    transform: rotate(180deg);
+}
+
 .seta {
     font-size: 10px;
     color: #fff;
+
 }
 
 .descricao-texto {
@@ -154,30 +153,31 @@ body{
     line-height: 1.5;
     color: #a3a3a3; 
     text-align: justify;
+    margin-top: 10px;
 }
 
-/* Parte de baixo */
+/* FOOTER */
 .footer {
+    
+    border-top: 1px solid #333;
+    
     background-color: rgba(0, 0, 0, 0.85);
     color: #b3b3b3;
     padding: 40px 60px;
     font-size: 14px;
 }
 
-.duvidas {
-    margin-bottom: 20px;
-}
-
-.duvidas a {
-    color: #fff;
-    text-decoration: none;
+.duvidas{
+    display: block;
+    margin-bottom: 25px;
+    color: #b3b3b3;
 }
 
 .footer-links {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px 40px;
+    display: flex;       
+    flex-wrap: wrap;     
+    gap: 40px;           
     padding: 0;
     margin: 0;
 }
@@ -186,8 +186,4 @@ body{
     color: #b3b3b3;
     text-decoration: none;
     font-size: 13px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
 }
